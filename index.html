@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LJ — Front-End Developer</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              bg: '#0b0b0f',
+              panel: '#121218',
+              border: 'rgba(255,255,255,0.08)',
+              accent: '#7c7cff',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-bg text-zinc-200 font-sans antialiased">
+    <!-- Container -->
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- ================= HERO ================= -->
+      <header class="min-h-screen flex flex-col justify-center">
+        <span class="text-accent text-sm font-medium tracking-wide">
+          Front-End Developer
+        </span>
+
+        <h1 class="mt-4 text-4xl sm:text-6xl font-bold leading-tight">
+          I build clean, fast,<br />
+          and intuitive web interfaces.
+        </h1>
+
+        <p class="mt-6 max-w-xl text-zinc-400">
+          Specialising in modern front-end development using HTML, CSS,
+          JavaScript, Vue, and Tailwind.
+        </p>
+
+        <div class="mt-10 flex gap-4">
+          <a
+            href="#projects"
+            class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-bg font-medium hover:opacity-90 transition"
+          >
+            View Work
+          </a>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center rounded-lg border border-border px-6 py-3 hover:bg-panel transition"
+          >
+            Contact
+          </a>
+        </div>
+      </header>
+
+      <!-- ================= PROJECTS ================= -->
+      <section id="projects" class="py-24">
+        <h2 class="text-3xl font-semibold">Selected Work</h2>
+
+        <div class="mt-10 grid gap-8 sm:grid-cols-2">
+          <!-- Project Card -->
+          <article
+            class="group rounded-xl border border-border bg-panel overflow-hidden hover:-translate-y-1 transition"
+          >
+            <div class="aspect-video bg-zinc-800"></div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-medium">Expense Tracker</h3>
+              <p class="mt-2 text-sm text-zinc-400">
+                Offline-first expense tracking app using localStorage.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-xs text-zinc-400">
+                <span class="rounded border border-border px-2 py-1">Vue</span>
+                <span class="rounded border border-border px-2 py-1"
+                  >Tailwind</span
+                >
+                <span class="rounded border border-border px-2 py-1"
+                  >LocalStorage</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card -->
+          <article
+            class="group rounded-xl border border-border bg-panel overflow-hidden hover:-translate-y-1 transition"
+          >
+            <div class="aspect-video bg-zinc-800"></div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-medium">Business Landing Page</h3>
+              <p class="mt-2 text-sm text-zinc-400">
+                Responsive marketing site with CMS-ready layout.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2 text-xs text-zinc-400">
+                <span class="rounded border border-border px-2 py-1">HTML</span>
+                <span class="rounded border border-border px-2 py-1">CSS</span>
+                <span class="rounded border border-border px-2 py-1"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="py-24">
+        <h2 class="text-3xl font-semibold">Skills</h2>
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-3">
+          <div class="rounded-xl border border-border bg-panel p-6">
+            <h3 class="font-medium">Core</h3>
+            <p class="mt-3 text-sm text-zinc-400">HTML, CSS, JavaScript, Vue</p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-panel p-6">
+            <h3 class="font-medium">UI</h3>
+            <p class="mt-3 text-sm text-zinc-400">
+              Tailwind, Responsive Design, Accessibility
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-panel p-6">
+            <h3 class="font-medium">Tools</h3>
+            <p class="mt-3 text-sm text-zinc-400">Git, GitHub, Vite, Figma</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="py-24 text-center">
+        <h2 class="text-3xl font-semibold">Let’s build something great</h2>
+        <p class="mt-4 text-zinc-400">
+          Have a project or role in mind? Let’s talk.
+        </p>
+
+        <div class="mt-8 flex justify-center gap-4">
+          <a
+            href="mailto:youremail@example.com"
+            class="rounded-lg bg-accent px-6 py-3 text-bg font-medium hover:opacity-90 transition"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            class="rounded-lg border border-border px-6 py-3 hover:bg-panel transition"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="py-10 text-center text-sm text-zinc-500">
+        © 2025 LJ — Front-End Developer
+      </footer>
+    </div>
+  </body>
+</html>
